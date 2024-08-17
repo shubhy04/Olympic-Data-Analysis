@@ -13,7 +13,7 @@ df = preprocessor.preprocess(df,region_df)
 
 st.sidebar.markdown("<h1 style='font-size: 36px; font-weight: bold; color:#FFD700;'>Olympic Analysis</h1>", unsafe_allow_html=True)
 
-st.sidebar.image("D:\\DA_Project\\Olympics-Web-app\\logo.png")
+st.sidebar.image("logo.png")
 user_menu = st.sidebar.radio(
     'Select an Option',
     ('Medal Tally','Overall Analysis','Country-wise Analysis','Athlete wise Analysis')

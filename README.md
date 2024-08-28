@@ -33,17 +33,29 @@ To run the project locally, follow these steps:
     git clone https://github.com/shubhy04/Olympic-Data-Analysis.git
     ```
 
-2. Install the required dependencies:
+2. Activate the virtual environment:
+
+    - For Windows:
+      ```bash
+      .venv\Scripts\activate
+      ```
+
+    - For macOS/Linux:
+      ```bash
+      source .venv/bin/activate
+      ```
+      
+3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Run the Streamlit app:
+4. Run the Streamlit app:
     ```bash
     streamlit run app.py
     ```
 
-4. Open your browser and go to:
+5. Open your browser and go to:
     ```
     http://localhost:8501
     ```

@@ -6,10 +6,15 @@ import plotly.express as px
 import preprocessor,helper
 import plotly.figure_factory as ff
 
-df = pd.read_csv('athlete_events.csv')
-region_df = pd.read_csv('noc_regions.csv')
+@st.cache_data
+def load_data():
+    df = pd.read_csv('athlete_events.csv')
+    region_df = pd.read_csv('noc_regions.csv')
+    return df, region_df
 
-df = preprocessor.preprocess(df,region_df)
+df, region_df = load_data()
+df = preprocessor.preprocess(df, region_df)
+
 
 st.sidebar.markdown("<h1 style='font-size: 36px; font-weight: bold; color:#FFD700;'>Olympic Analysis</h1>", unsafe_allow_html=True)
 
